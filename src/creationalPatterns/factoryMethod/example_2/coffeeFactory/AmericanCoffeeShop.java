@@ -2,27 +2,25 @@ package creationalPatterns.factoryMethod.example_2.coffeeFactory;
 
 import creationalPatterns.factoryMethod.example_2.aboutCoffee.*;
 
-import static creationalPatterns.factoryMethod.example_2.aboutCoffee.CoffeeType.*;
-
-public class SimpleCoffeeFactory {
+public class AmericanCoffeeShop extends CoffeeShop {
+    @Override
     public Coffee createCoffee(CoffeeType type) {
         Coffee coffee = null;
 
         switch (type) {
             case AMERICANO:
-                coffee = new Americano();
+                coffee = new AmericanStyleAmericano();
                 break;
             case ESPRESSO:
-                coffee = new Espresso();
+                coffee = new AmericanStyleEspresso();
                 break;
             case CAPPUCCINO:
-                coffee = new Cappuccino();
+                coffee = new AmericanStyleCappuccino();
                 break;
             case CAFFE_LATTE:
-                coffee = new CaffeLatte();
+                coffee = new AmericanStyleCaffeLatte();
                 break;
         }
-
         return coffee;
     }
 }
