@@ -1,4 +1,4 @@
-package structuralPatterns.example_1.decorators;
+package structuralPatterns.decorator.example_1;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package structuralPatterns.example_1.decorators;
+package structuralPatterns.decorator.example_1;
 
 public class Demo {
     public static void main(String[] args) {
