@@ -4,7 +4,7 @@ import creationalPatterns.factoryMethod.example_3.allAboutPizza.*;
 
 public class PizzaShop_EU extends PizzaShop {
     @Override
-    protected Pizza createPizza(PizzaType type) {
+    public Pizza createPizza(PizzaType type) {
         Pizza pizza = null;
         switch (type) {
             case MOZZARELLA -> pizza = new Mozzarella_EU();

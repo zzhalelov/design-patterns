@@ -1,6 +1,8 @@
 package structuralPatterns.decorator.example_2;
 
-public class Demo {
+public class Main {
+    //Декоратор — это структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность,
+    // оборачивая их в полезные «обёртки».
     public static void main(String[] args) {
         Shape circle = new Circle();
         Shape redCircle = new RedShapeDecorator(new Circle());
